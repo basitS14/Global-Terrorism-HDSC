@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Terrorism</title>
+</head>
+<body>
+    {% if results%}
+        <h2>attack will be {{results}}.</h2>
+    {% endif%}
+    <form action="">
+        Enter Country Name <input type="text" name="country_name" id="country_name"><br>
+        Enter Region Name <input type="text" name="region_name" id="region_name"><br>
+        Duration 24 hrs <input type="number" name="Duration" id="Duration"><br>
+        Enter City <input type="text" name="city" id="city"><br>
+        Is it multiple ? <input type="number" name="ismultiple" id="ismultiple"><br>
+        Enter attacktype <input type="text" name="attacktype" id="attacktype"><br>
+        Enter targetytpe   <input type="text" name="targetytpe" id="targetytpe"><br>
+        Enter weapontype <input type="text" name="weapontype_name" id="weapontype_name"><br>
+        is kid held hostage? <input type="number" name="kid_is_hostage" id="kid_is_hostage"><br>
+        enter terrorist group name <input type="text" name="group" id="group"><br>
+
+        <input type="button" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- ['country_name', 'region_name', 'Duration>24hrs', 'city',
+'ismultiple', 'attacktype', 'targettype_name', 'weapontype_name',
+'kid_is_hostage', 'group_name'] -->
